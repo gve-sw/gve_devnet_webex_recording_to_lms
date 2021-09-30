@@ -34,13 +34,13 @@ The Webex platform allows for quick creation of notifier bots, as used in this p
 1. Clone this repository: 
 
 ```
-$ git clone https://wwwin-github.cisco.com/gve/gve_devnet_webex_recording_to_LMS
+$ git clone https://github.com/gve-sw/gve_devnet_webex_recording_to_lms
 ```
 
 2. Navigate into this repository: 
 
 ```
-$ cd gve_devnet_webex_recording_to_LMS
+$ cd gve_devnet_webex_recording_to_lms
 ```
 
 3. In `docker-compose.yml`, fill out the following environment variables:
