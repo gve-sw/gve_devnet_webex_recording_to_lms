@@ -1,0 +1,15 @@
+import os
+
+WEBEX_TOKEN = os.environ['WEBEX_TOKEN']
+WEBEX_REFRESH_TOKEN = os.environ['WEBEX_REFRESH_TOKEN']
+WEBEX_BOT_TOKEN = os.environ['WEBEX_BOT_TOKEN']
+
+COLE_ACCESS_TOKEN = os.environ['COLE_ACCESS_TOKEN']
+COLE_URL = os.environ['COLE_URL']
+
+WEBEX_CLIENT_ID=os.environ['WEBEX_CLIENT_ID']
+WEBEX_CLIENT_SECRET=os.environ['WEBEX_CLIENT_SECRET']
+WEBEX_ROOM_ID=os.environ['WEBEX_ROOM_ID']
+
+FROM_DATE=os.environ['FROM_DATE']
+TO_DATE=os.environ['TO_DATE']

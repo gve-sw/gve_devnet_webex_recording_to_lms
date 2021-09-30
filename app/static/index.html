@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="locale" content="US">
+        <meta name="language" content="en">
+        <meta name="country" content="US">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>COLE</title>
+        <link rel="stylesheet" href="static/css/cui-standard.css">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="//www.cisco.com/favicon.ico">
+        <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="///www.cisco.com/favicon.ico">
+        <script src="static/js/backendlink.js"></script>
+    </head>
+
+    <body class="cui">
+        <div class="content-fluid">
+            <main>
+                <header class="header header--compressed">
+                    <div class="header-bar container">
+                        <a href="javascript:;" class="header-bar__logo">
+                            <span class="icon-cisco"></span>
+                        </a>
+                        <div class="header-bar__main">
+                            <div class="header-heading">
+                                <h1 class="page-title">COLE Recording Tool</h1>
+                            </div>
+                        </div>
+                        <div class="header-toolbar">
+                            <a href="javascript:;" class="btn btn--small btn--icon">
+                                <span class="icon-tools"></span>
+                            </a>
+                        </div>
+                    </div>
+                </header>
+
+                <div>
+                    <div class="col-12 base-margin-bottom">
+                        <div class="grid grid--3up">
+                            <div class="card card--centered card--raised half-padding" style="height:230px;margin: 20px;">
+                                <div class="card__header" style="margin-top: 50px;">
+                                    <h4 class="card__title">1. Upload CSV File</h4>
+                                    <input type="file" id="fileToUpload" style="margin-left: 90px;margin-top: 20px;">
+                                </div>
+                                <div class="card__body">
+                                    <a class="btn btn--success" onclick="uploadCSV();">Upload</a>
+                                    <div id="checkfile" style="margin-top: 10px;"></div>
+                                </div>
+                            </div>
+
+                            <div class="card card--centered card--raised half-padding" style="height:230px;margin: 20px;">
+                                <div class="card__header" style="margin-top: 50px;">
+                                    <h4 class="card__title">2. Get Recordings</h4>
+                                </div>
+                                <div class="card__body">
+                                    <a class="btn btn--primary" onclick="getRecordings();">Run</a>
+                                    <div id="waiter" style="margin-top: 10px;"></div>
+                                </div>
+                            </div>
+
+                            <div class="card card--centered card--raised half-padding" style="height:230px;margin: 20px;">
+                                <div class="card__header" style="margin-top: 50px;">
+                                    <h4 class="card__title">3. Post to COLE</h4>
+                                </div>
+                                <div class="card__body">
+                                    <a class="btn btn--primary" onclick="postToCOLE();">Run</a>
+                                    <div id="checkmark" style="margin-top: 10px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="footer" style="position: absolute;bottom:0;left:0;right:0;">
+                    <div class="footer__links">
+                        <ul class="list">
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__legal">
+                        <div class="footer__logo">
+                            <a href="http://www.cisco.com" target="_blank">
+                                <span class="icon-cisco"></span>
+                            </a>
+                        </div>
+                        <div class="footer__copyright">
+                            <div>Copyright &copy; 2021 Cisco Systems Inc.</div>
+                            <div>All rights reserved.</div>
+                        </div>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </body>
+</html>
+

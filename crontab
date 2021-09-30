@@ -1,0 +1,4 @@
+#run python script every minutes. to make it run every 13 days, use : 0 0 13 * *
+0 */12 * * * chmod +x /bin/sh && /bin/sh /app/fetch.sh > /proc/1/fd/1 2>&1
+0 0 * * * chmod +x /bin/sh && /bin/sh /app/conscript.sh > /proc/1/fd/1 2>/proc/1/fd/2
+#You need empty line at the end

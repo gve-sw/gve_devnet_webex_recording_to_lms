@@ -1,0 +1,21 @@
+version: '3'
+services:
+  web:
+    build: .
+    container_name: cole-recordings
+    restart: always
+    ports:
+      - "8090:80"
+    environment:
+      - COLE_ACCESS_TOKEN="Your COLE access token"
+      - WEBEX_TOKEN="Your Webex access token"
+      - WEBEX_REFRESH_TOKEN="Your Webex refresh token"
+      - WEBEX_BOT_TOKEN="Your Webex notifier bot token for access token renewal"
+      - WEBEX_NOTIFIER_TOKEN="Your Webex notifier bot token for recording updates"
+      - COLE_URL="Your COLE course URL"
+      - WEBEX_CLIENT_ID="Your Webex integration ID"
+      - WEBEX_CLIENT_SECRET="Your Webex integration secret"
+      - WEBEX_ROOM_ID="Your Webex room ID for bot notifications"
+      - FROM_DATE="Start date for recordings"
+      - TO_DATE="End date for recordings"
+
